@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@400..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --color-background: #0f0f1a;
+    --color-foreground: #e8e8f0;
+    --color-border: #2a2a3d;
+    --color-input: #1a1a2e;
+    --color-primary: #7c3aed;
+    --color-primary-foreground: #ffffff;
+    --color-secondary: #1e1b4b;
+    --color-secondary-foreground: #a78bfa;
+    --color-muted: #1a1a2e;
+    --color-muted-foreground: #6b6b8a;
+    --color-accent: #06b6d4;
+    --color-accent-foreground: #ffffff;
+    --color-card: #13132a;
+    --color-card-foreground: #e8e8f0;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --font-body: "Inter", sans-serif;
+    --font-headings: "Space Grotesk", sans-serif;
+}
+
+:root {
+    --background: #0f0f1a;
+    --foreground: #e8e8f0;
+    --muted: #1a1a2e;
+    --muted-foreground: #6b6b8a;
+    --card: #13132a;
+    --primary: #7c3aed;
+    --primary-foreground: #ffffff;
+    --secondary: #1e1b4b;
+    --secondary-foreground: #a78bfa;
+    --accent: #06b6d4;
+    --border: #2a2a3d;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --font-body: "Inter", sans-serif;
+    --font-headings: "Space Grotesk", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
