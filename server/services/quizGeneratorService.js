@@ -63,7 +63,7 @@ Respond with valid JSON matching this exact structure:
       const response = await axios.post(OPENROUTER_BASE, body, {
         headers: {
           Authorization: `Bearer ${apiKey}`,
-          "HTTP-Referer": "http://localhost:5000",
+          "HTTP-Referer": process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:5000",
           "X-Title": "PrepPilot",
           "Content-Type": "application/json",
         },
